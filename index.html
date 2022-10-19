@@ -1,37 +1,11 @@
 <!doctype html>
-<!-- 
-Date:           29-1-2020
-Company:   Reslink Solutions
-Developer:  Ali Zuhairi
+<!-- Developer:  Ali Zuhairi
 -->
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Application Builder 2020</title>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"> </script>
+	<title>Application Builder 2020</title>
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-	crossorigin="anonymous">
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-	crossorigin="anonymous">
-<link rel="stylesheet" href="assets/customs/custom.css">
-<link
-	href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
-	rel="stylesheet">
-<script type="text/javascript" language="javascript"
-	src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript" language="javascript"
-	src="assets/js/w3-include.js"></script>
-<script
-	src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +13,7 @@ Developer:  Ali Zuhairi
 		$(function () { $('[data-toggle="tooltip"]').tooltip()})
 	</script>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="index.php">Reslink Solutions</a>
+		<a class="navbar-brand" href="index.html">Center UX</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -49,19 +23,19 @@ Developer:  Ali Zuhairi
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item"><a class="nav-link"
-					href="https://www.reslink.fi" target="_blank">Website</a></li>
+					href="https://centerux.com" target="_blank">Website</a></li>
 				<li class="nav-item"><a class="nav-link"
-					href="https://dev.reslink.fi" target="_blank">Documentation</a></li>
-				<li class="nav-item"><a class="nav-link" href="specs.php"
+					href="https://centerux.com" target="_blank">Documentation</a></li>
+				<li class="nav-item"><a class="nav-link" href="specs.html"
 					target="_blank">Specs</a></li>
-				<li class="nav-item"><a class="nav-link" href="prices.php"
+				<li class="nav-item"><a class="nav-link" href="prices.html"
 					target="_blank">Prices</a></li>
 				<li class="nav-item"><a class="nav-link" href="#"
 					data-toggle="modal" data-target="#aboutModal">About</a></li>
 			</ul>
 
 			<!-- App -->
-	<?php include_once 'containers/modals/about.php'; ?>
+	<?php include_once 'containers/modals/about.html'; ?>
     
     <form class="form-inline my-2 my-lg-0">
 				<input id="searchInput" class="form-control mr-sm-2" type="search"
@@ -74,7 +48,7 @@ Developer:  Ali Zuhairi
 	<div class="container-full" id="searchDiv">
 		<br>
 		<div class="text-center">
-			<a href="start.php"><span class="icon-margin-reslink"
+			<a href="start.html"><span class="icon-margin-reslink"
 				data-toggle="tooltip" data-placement="bottom"
 				title="Create New Application"><i class="fa fa-plus fa-3x"></i></span></a>
 			<a href="#"><span class="icon-margin-reslink" data-toggle="tooltip"
@@ -82,7 +56,7 @@ Developer:  Ali Zuhairi
 					class="far fa-arrow-alt-circle-down fa-3x"></i></span></a> <a
 				href="#"><span class="icon-margin-reslink" data-toggle="tooltip"
 				data-placement="bottom" title="Upload Images"><i
-					class="far fa-images fa-3x"></i></span></a> <a href="functions.php"><span
+					class="far fa-images fa-3x"></i></span></a> <a href="functions.html"><span
 				class="icon-margin-reslink" data-toggle="tooltip"
 				data-placement="bottom" title="Functions"><i
 					class="fas fa-subscript fa-3x"></i></span></a>
@@ -92,19 +66,19 @@ Developer:  Ali Zuhairi
 		<div class="container-fluid">
 			<div class="row">
 				<!-- App -->
-				<div class="col-md-6 col-sm-12"><?php include_once 'containers/app/incident-eye.php'; ?></div>
-				<div class="col-md-6 col-sm-12"><?php include_once 'containers/app/digital-forms.php'; ?></div>
+				<div class="col-md-6 col-sm-12"><?php include_once 'containers/app/incident-eye.html'; ?></div>
+				<div class="col-md-6 col-sm-12"><?php include_once 'containers/app/digital-forms.html'; ?></div>
 
 				<hr>
 			</div>
 			<!-- Build and Download Modal -->
-		<?php include_once 'containers/modals/build-download.php'; ?>
+		<?php include_once 'containers/modals/build-download.html'; ?>
 
       </div>
 		<!-- close tab Apps -->
 
 		<!-- Footer -->
-	<?php include_once 'containers/common/footer.php'; ?>
+	<?php include_once 'containers/common/footer.html'; ?>
     
   <!-- close container for tabs -->
 
