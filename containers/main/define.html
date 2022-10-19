@@ -1,0 +1,215 @@
+
+<!-- 
+Date:       29-1-2020
+Company:    Reslink Solutions
+Developer:  Ali Zuhairi
+-->
+<div class="container-fluid">
+	<div class="row">
+
+		<!-- col -->
+		<div class="col-md-4 col-sm-12">
+			<div class="card margin-bottom-reslink card-shadow-reslink">
+				<div class="card-header">General Info</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label for="exampleInputEmail1">App Name</label> <input
+							type="email" class="form-control" aria-describedby="emailHelp"
+							placeholder="Enter your application name">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">App ID</label> <input type="email"
+							class="form-control" aria-describedby="emailHelp"
+							placeholder="Enter your application ID name">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Description</label> <input
+							type="email" class="form-control" aria-describedby="emailHelp"
+							placeholder="Enter your description">
+					</div>
+					<div class="form-group">
+						<div>
+							<label for="exampleInputEmail1">License</label>
+						</div>
+						<select class="custom-select" required>
+							<option value="">Select your option</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Layouts</label> <br> <select
+							class="custom-select" required>
+							<option value="">Select your option</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Application type</label> <select
+							class="custom-select" required>
+							<option value="">Mobile ID [Default]</option>
+							<option value="1">Mobile</option>
+							<option value="2">NFC</option>
+							<option value="3">GPS</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- col close -->
+
+		<!-- col -->
+		<div class="col-md-4 col-sm-12">
+			<div class="card margin-bottom-reslink card-shadow-reslink">
+				<div class="card-header">Graphics</div>
+				<div class="card-body">
+
+					<!-- the avatar markup -->
+					<label>Select an Icon</label>
+					<div class="setting image_picker">
+						<div class="settings_wrap">
+							<label class="drop_target">
+								<div class="image_preview"></div> <input id="inputIcon"
+								type="file" />
+							</label>
+							<div class="settings_actions vertical">
+								<a data-action="choose_from_uploaded"><i class="fas fa-images"></i>
+									Choose from Uploads</a> <a class="disabled"
+									data-action="remove_current_image"><i class="fa fa-ban"></i>
+									Remove Current Image</a>
+							</div>
+							<div class="image_details">
+								<label class="input_line image_title"> <input type="text"
+									placeholder="Title" />
+								</label>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<label>Select a Logo</label>
+					<div class="setting image_picker">
+						<div class="settings_wrap">
+							<label class="drop_target">
+								<div class="image_preview"></div> <input id="inputLogo"
+								type="file" />
+							</label>
+							<div class="settings_actions vertical">
+								<a data-action="choose_from_uploaded"><i class="fas fa-images"></i>
+									Choose from Uploads</a> <a class="disabled"
+									data-action="remove_current_image"><i class="fa fa-ban"></i>
+									Remove Current Image</a>
+							</div>
+							<div class="image_details">
+								<label class="input_line image_title"> <input type="text"
+									placeholder="Title" />
+								</label>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<label>Select a Splash</label>
+					<div class="setting image_picker">
+						<div class="settings_wrap">
+							<label class="drop_target">
+								<div class="image_preview"></div> <input id="inputSplash"
+								type="file" />
+							</label>
+							<div class="settings_actions vertical">
+								<a data-action="choose_from_uploaded"><i class="fas fa-images"></i>
+									Choose from Uploads</a> <a class="disabled"
+									data-action="remove_current_image"><i class="fa fa-ban"></i>
+									Remove Current Image</a>
+							</div>
+							<div class="image_details">
+								<label class="input_line image_title"> <input type="text"
+									placeholder="Title" />
+								</label>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<!-- the avatar markup -->
+
+					<label for="exampleInputEmail1">Themes</label> <br> <select
+						class="custom-select" required>
+						<option value="">Select your option</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select> <br> <br> <label for="exampleInputEmail1">Layout</label>
+					<br> <select class="custom-select" required>
+						<option value="">Select your option</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select> <br> <br> <label for="exampleInputEmail1">Device Screen
+						Orientation</label> <br> <select class="custom-select" required>
+						<option value="">Select your option</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select> <br> <br>
+				</div>
+			</div>
+		</div>
+		<!-- col close -->
+
+		<!-- col -->
+		<div class="col-md-4 col-sm-12">
+			<div class="card margin-bottom-reslink card-shadow-reslink">
+				<div class="card-header">
+					<a data-toggle="collapse" data-target="#options">Options</a>
+				</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Welcome message</label> <span
+							class="float-right" style="margin-bottom: 10px;"> <input
+							type="checkbox" checked data-toggle="toggle" data-style="backend"
+							data-size="sm">
+						</span>
+						<textarea class="form-control" rows="5"
+							placeholder="Add your welcome message here"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">App Context</label>
+						<textarea class="form-control" rows="5" placeholder="Start here"></textarea>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Logout</label> <span
+							class="float-right"> <input type="checkbox" checked
+							data-toggle="toggle" data-style="backend" data-size="sm">
+						</span>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Exit</label> <span
+							class="float-right"> <input type="checkbox" checked
+							data-toggle="toggle" data-style="backend" data-size="sm">
+						</span>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Settings</label> <span
+							class="float-right"> <input type="checkbox" data-toggle="toggle"
+							data-style="backend" data-size="sm">
+						</span>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label for="exampleInputEmail1"> Screen ON</label> <span
+							class="float-right"> <input type="checkbox" checked
+							data-toggle="toggle" data-style="backend" data-size="sm">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- col close -->
+
+		<hr>
+	</div>
+</div>
+<!-- close tab Apps -->
