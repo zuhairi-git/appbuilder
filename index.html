@@ -3,10 +3,15 @@
 -->
 <html lang="en">
 <head>
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"> </script>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"> </script>
+	
+	<script> $(function(){ $("#about").load("containers/modals/about.html"); }); </script>
+	<script> $(function(){ $("#build-download").load("containers/modals/build-download.html"); }); </script>
+	<script> $(function(){ $("#footer").load("common/footer.html"); }); </script>
+	<script> $(function(){ $("#adscene").load("containers/app/adscene.html"); }); </script>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -49,8 +54,9 @@
 					data-toggle="modal" data-target="#aboutModal">About</a></li>
 			</ul>
 
-			<!-- App -->
-	<?php include_once 'containers/modals/about.html'; ?>
+	<!-- App -->
+	<div id="about"></div>
+
     
     <form class="form-inline my-2 my-lg-0">
 				<input id="searchInput" class="form-control mr-sm-2" type="search"
@@ -81,19 +87,20 @@
 		<div class="container-fluid">
 			<div class="row">
 				<!-- App -->
-				<div class="col-md-6 col-sm-12"><?php include_once 'containers/app/incident-eye.html'; ?></div>
-				<div class="col-md-6 col-sm-12"><?php include_once 'containers/app/digital-forms.html'; ?></div>
+				<div class="col-md-6 col-sm-12">
+					<div id="adscene"></div>
+				</div>
 
 				<hr>
 			</div>
 			<!-- Build and Download Modal -->
-		<?php include_once 'containers/modals/build-download.html'; ?>
+			<div id="build-download"></div>
 
       </div>
 		<!-- close tab Apps -->
 
 		<!-- Footer -->
-	<?php include_once 'containers/common/footer.html'; ?>
+		<div id="footer"></div>
     
   <!-- close container for tabs -->
 
@@ -102,15 +109,15 @@
 
 	<!-- Search JavaScript -->
 	<script>
-	$(document).ready(function(){
-	  $("#searchInput").on("keyup", function() {
-		var value = $(this).val().toLowerCase();
-		$("#searchDiv *").filter(function() {
-		  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		$(document).ready(function(){
+		$("#searchInput").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#searchDiv *").filter(function() {
+			$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
 		});
-	  });
-	});
-</script>
+		});
+	</script>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
