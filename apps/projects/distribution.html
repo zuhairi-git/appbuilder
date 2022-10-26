@@ -1573,19 +1573,11 @@
 											<div class="col-xl-6">
 												<!--begin::List Widget 1-->
 												<div class="card card-xl-stretch mb-xl-8">
+													<div class="card-header">
+														<h3 class="card-title">Details</h3>
+													</div>
 													<!--begin::Body-->
 													<div class="card-body pt-5">
-														<label for="" class="form-label">Choose an Application</label>
-														<select class="form-select mb-5" data-control="select2" data-placeholder="Select an option">
-															<option></option>
-															<option value="1">Smart Banking</option>
-														</select>
-														<label for="" class="form-label">Choose a Version</label>
-														<select class="form-select mb-5" data-control="select2" data-placeholder="Select an option">
-															<option></option>
-															<option value="1">v8.210911</option>
-															<option value="1">v7.210806</option>
-														</select>
 														<label for="" class="form-label">Choose a Platform</label>
 														<select class="form-select mb-5" data-control="select2" data-placeholder="Select an option">
 															<option></option>
@@ -1593,25 +1585,58 @@
 															<option value="1">iOS</option>
 															<option value="1">Web</option>
 														</select>
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-6">
-												<div class="card card-xl-stretch mb-xl-8">
-													<!--begin::Body-->
-													<div class="card-body pt-5">
-														<div class="d-block mb-20">
+														<label for="" class="form-label">Choose a Version</label>
+														<select class="form-select mb-5" data-control="select2" data-placeholder="Select an option">
+															<option></option>
+															<option value="1">v8.210911</option>
+															<option value="1">v7.210806</option>
+														</select>
+														<div class="d-block mb-20 mt-10">
 															<a href="#"  class="btn btn-success float-start">Download</a>
 															<a href="#"  class="btn btn-warning float-end">Recompile</a>
 														</div>
-														<div class="separator mb-5"></div>
+													</div>
+												</div>
+											</div>
+
+											<!--start::Barcode-->
+											<div class="col-xl-6">
+												<div class="card card-xl-stretch mb-xl-8">
+													<div class="card-header">
+														<h3 class="card-title">Barcode</h3>
+														<i class="card-title fa fa-print"></i>
+													</div>
+													<!--begin::Body-->
+													<div class="card-body pt-5">
 														<label for="" class="form-label">Barcode</label>
 														<span class="text-muted fw-semibold d-block fs-7 mb-5">iOS or Android will be detected automatically.</span>
-														<div class="image-input-wrapper w-125px h-125px" style="background-image: url(assets/media/svg/centerux-barcode.svg)"></div>
+														<div class="mb-10"></div>
+														<div class="text-center">
+															<img class="w-300px h-300px rounded rounded-4 border p-5" src="assets/media/svg/centerux-barcode.svg" alt="barcode">
+														</div>
 
 													</div>
 												</div>
 											</div>
+											<!--end::Barcode-->
+
+											<!--start::Send-->
+											<div class="col-xl-6">
+												<div class="card card-xl-stretch mb-xl-8">
+													<div class="card-header">
+														<h3 class="card-title">Send</h3>
+													</div>
+													<!--begin::Body-->
+													<div class="card-body pt-5">
+														<span class="text-muted fw-semibold d-block fs-7 mb-5">Send a link / bardcode to emails or via SMS</span>
+														<div class="form-floating">
+															<input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="name@example.com"/>
+															<label for="floatingInputValue">Email</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--end::Send-->
 
 									<!--end::Row-->
 
